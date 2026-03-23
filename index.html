@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes.nl - Test je kennis met deze leuke quizzes</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/main.css">
+
+    <audio id="bg-music" autoplay loop>
+        <source src="media/background.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="meow-sound" src="media/woosh-230554.mp3"></audio>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img class="logo-circle" src="media/QuizzieLogo.png" alt="Logo">
+            <span>Quizzes</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/vragen.html">Vragen</a></li>
+                <li><a href="pages/overons.html">Over ons</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Zoeken...">
+            <button class="search-button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welkom bij Quizzes.nl</h1>
+            <p class="prettyfont">Test je kennis met deze leuke quizzes</p>
+        </div>
+        <div class="hero-image" id="homepage-leaderboard">
+           </div>
+    </section>
+
+    <section class="quizzes-section">
+        <div class="quiz-card autisme" data-quiz="autisme" onclick="window.location.href='pages/autisme.html'">
+            <img class="quiz-card-img" src="media/afbeelding+autisme.jpg" alt="Autisme">
+            <div class="quiz-card-content">
+                <h3>Autisme Quizzie</h3>
+                <p>Daag je kennis over Autisme uit</p>
+                <div class="difficulty-badge">Difficulty: Easy</div>
+                <div class="author">Soufyan</div>
+            </div>
+        </div>
+        
+        <div class="quiz-card depressie" data-quiz="depressie" onclick="window.location.href='pages/depressie.html'">
+            <img class="quiz-card-img" src="media/depressie (1).jpg" alt="Depressie">
+            <div class="quiz-card-content">
+                <h3>Depressie Quizzie</h3>
+                <p>Test je kennis over Depressie uit</p>
+                <div class="difficulty-badge">Difficulty: Medium</div>
+                <div class="author">Fabian</div>
+            </div>
+        </div>
+        
+        <div class="quiz-card dyscalculie" data-quiz="dyscalculie" onclick="window.location.href='pages/dyscalculie.html'">
+            <img class="quiz-card-img" src="media/dyscaculie.jpg" alt="Dyscalculie">
+            <div class="quiz-card-content">
+                <h3>Dyscalculie Quizzie</h3>
+                <p>Daag je kennis over Dyscalculie uit</p>
+                <div class="difficulty-badge">Difficulty: Medium</div>
+                <div class="author">Guusje</div>
+            </div>
+        </div>
+        
+        <div class="quiz-card hoogbegaafdheid" data-quiz="hoogbegaafdheid" onclick="window.location.href='pages/hoogbegaafdheid.html'">
+            <img class="quiz-card-img" src="media/Hoogbegaafd-hooggevoelig.png" alt="Hoogbegaafdheid">
+            <div class="quiz-card-content">
+                <h3>Hoogbegaafdheid Quizzie</h3>
+                <p>Test je kennis over Hoogbegaafdheid uit</p>
+                <div class="difficulty-badge">Difficulty: Hard</div>
+                <div class="author">Salah</div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>© 2025 Quizzes App. All rights reserved.</p>
+    </footer>
+    
+    <script src="scripts/main.js"></script>
+</body>
+</html>
